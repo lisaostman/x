@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-6">
+            <p id="left">
+                <button id="clickMe">Lesson 1</button>
+                <button id="clickMe2">Lesson 2</button>
+            </p>
+        </div>
+        <div class="col-6">
+            <p id="right">
+                
+            </p>
+        </div>
+    </div>
+    <script>
+       var paragraph = document.querySelector('#right');
+       document.querySelector('#clickMe').addEventListener('click', function() {
+        document.querySelector('#right').innerHTML = "hello there!"
+       })
+       document.querySelector('#clickMe2').addEventListener('click', function() {
+        document.querySelector('#right').innerHTML = "hello there 2!"
+       })
+    </script>
+</body>
+</html>
